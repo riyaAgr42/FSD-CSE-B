@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <h1>Register Here</h1>
+  <form name="register" method="post" action="/register">
+    <label for="name">Name</label>
+    <input type="text"name="username" id="name" placeholder="Enter your name" required> <br>
+     <label for="email">Email</label>
+    <input type="email"name="useremail" id="email" placeholder="Enter your email" required> <br>
+     <label for="mobile">Phone-No</label>
+    <input type="number"name="mobile" id="mobile" placeholder="Enter your number" required> <br>
+    <label for="dob">DOB</label>
+    <input type="date"name="dob" id="dob" placeholder="Enter your number" required> 
+    <br>
+    <label for="gender">Gender</label>
+    <input type="radio" id="gender" name="gender" value="M" checked>Male
+    <input type="radio" id="gender" name="gender" value="F">Female
+    <br>
+    <label for="branch">Branch</label>
+    <select id="branch" name="branch">
+      <option value="cse">CSE</option>
+      <option value="aiml">AIML</option>
+      <option value="ds">DS</option>
+      <option value="ece">ECE</option>
+       <option value="it">IT</option>
+    </select>
+    <br>
+     <label for="sem">Semester</label>
+    <select id="sem" name="sem">
+      <option value="1">1</option>
+      <option value="2">2</option>
+      <option value="3">3</option>
+      <option value="4">4</option>
+      <option value="i5">5</option>
+    </select>
+    <br>
+    <label for="address">Address</label>
+    <textarea name="" id="address" row="3" cols="30" placeholder="Enter Current address"></textarea> <br>
+    <label for="certificate">Uplaod 12th Certificate</label>
+    <input type="file" id="certificate" name="certificate"> <br>
+    <input type="submit" value="Register">
+    <input type="submit" value="Reset">
+
+  </form>
+  
+</body>
+</html>
