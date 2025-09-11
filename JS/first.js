@@ -38,36 +38,85 @@
 //   callback();
 // }
 
-function waitForTwoSeconds(){
-  let ms=2000+new Date().getTime();
-  while(new Date().getTime()<ms);
-}
+//synchronous programming----
+
+// function waitForTwoSeconds(){
+//   let ms=2000+new Date().getTime();
+//   while(new Date().getTime()<ms);
+// }
+
+// function register(){
+//   waitForTwoSeconds();
+//   console.log("register function called");
+// }
+// function sendEmail(){
+//   waitForTwoSeconds();
+//   console.log("sendEmail function called");
+// }
+// function login(){
+//   waitForTwoSeconds();
+//   console.log("login function called");
+// }
+// function getData(){
+//   waitForTwoSeconds();
+//   console.log("getData function called");
+// }
+// function DisplayData(){
+//   waitForTwoSeconds();
+//   console.log("DisplayData function called");
+// }
+
+// register();
+// sendEmail();
+// login();
+// getData();
+// DisplayData();
+// console.log("other Application");
+
+
+
+//asynchronous programming----
 
 function register(){
-  waitForTwoSeconds();
-  console.log("register function called");
+  setTimeout(()=>{
+    console.log("register function called"); 
+  },2000);
 }
 function sendEmail(){
-  waitForTwoSeconds();
-  console.log("sendEmail function called");
-}
+  setTimeout(()=>{
+
+    console.log("sendEmail function called");
+  },1000);
+}    
 function login(){
-  waitForTwoSeconds();
-  console.log("login function called");
+  setTimeout(()=>{
+    console.log("login function called");  
+  },3000);
 }
 function getData(){
-  waitForTwoSeconds();
-  console.log("getData function called");
+  setTimeout(()=>{ 
+    console.log("getData function called");
+  },2000);
 }
 function DisplayData(){
-  waitForTwoSeconds();
-  console.log("DisplayData function called");
+  setTimeout(()=>{
+    console.log("DisplayData function called");  
+  },1000);
 }
-
 
 register();
 sendEmail();
 login();
 getData();
-DisplayData();
+DisplayData();   
 console.log("other Application");
+
+// register(()=>{
+//   sendEmail(()=>{
+//     login(()=>{
+//       getData(()=>{
+//         DisplayData();
+//       });
+//     });
+//   });
+// });
