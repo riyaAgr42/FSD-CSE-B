@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Layout</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        .header{
+            height: 50px;
+            background-color: rgb(187, 222, 31);
+        }
+        .body{
+            display: flex;
+            /* height: 550px; */
+            height: 78vh;
+            background-color: rgb(207, 225, 42);
+        }
+        .footer{
+            height: 70px;
+            background-color: rgb(192, 119, 119);
+        }
+        .left{
+            height: 100%;
+            width: 35vw;
+            border: 2px solid black;
+        }
+        .right{
+            height: 100%;
+            width: 65vw;
+            border: 2px solid black;
+        }
+        .nav ul{
+            display: flex;
+            align-items: center;
+            justify-content: space-evenly;
+        }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="header">ABES </div>
+      <div class="nav"><ul>
+        <li>Home</li>
+        <li>About</li>
+        <li>Services</li>
+        <li>Login</li>
+      </ul></div>
+      <div class="body">
+        <div class="left">left</div>
+        <div class="right">right</div>
+      </div>
+      <div class="footer"><center>Footer</center></div>
+    </div>
+  </body>
+</html>
