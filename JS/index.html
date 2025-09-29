@@ -35,6 +35,7 @@
       try {
         data = await fetch(url);
         data = await data.json();
+        console.log(data);
       } catch (error) {
         console.error(error);
       }
