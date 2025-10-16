@@ -15,6 +15,8 @@ const image=React.createElement("img",
 return (child);
 }
 
+//without function
+
 // const image=React.createElement("img",
 //   {
 //     src:"https://josipmisko.com/img/books/The-Road-to-React.jpg",
